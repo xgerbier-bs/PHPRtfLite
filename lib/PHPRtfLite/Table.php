@@ -49,13 +49,13 @@ class PHPRtfLite_Table implements PHPRtfLite_Freeable
      * array of PHPRtfLite_Table_Row instances
      * @var PHPRtfLite_Table_Row[]
      */
-    protected $_rows = [];              // #XGE-220928 : Fixed error 'TypeError: count(): Argument #1 ($value) must be of type Countable|array, null' when calling 'getRowsCount()' (PHP8 compatibility)
+    protected $_rows = [];              // #XGE 28/09/2022 : Fixed error 'TypeError: count(): Argument #1 ($value) must be of type Countable|array, null' when calling 'getRowsCount()' (PHP8 compatibility)
 
     /**
      * array of PHPRtfLite_Table_Column instances
      * @var PHPRtfLite_Table_Column[]
      */
-    protected $_columns = [];           // #XGE-220928 : Fixed error 'TypeError: count(): Argument #1 ($value) must be of type Countable|array, null' when calling 'getColumnsCount()' (PHP8 compatibility)
+    protected $_columns = [];           // #XGE 28/09/2022 : Fixed error 'TypeError: count(): Argument #1 ($value) must be of type Countable|array, null' when calling 'getColumnsCount()' (PHP8 compatibility)
 
     /**
      * @var string
